@@ -1,0 +1,11 @@
+---
+const { nombre, titulo, imagen, descripcion } = Astro.props;
+const nombreFinal = nombre ?? titulo ?? "Servicio";
+---
+<div>
+  <img src={imagen} alt={nombreFinal} width="200" height="200" />
+
+  <h2>{nombreFinal}</h2>
+
+  <p>{descripcion}</p>
+</div>

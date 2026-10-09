@@ -1,16 +1,41 @@
 ---
+import BaseLayout from "../layouts/baselayout.astro";
+import Card from "../components/Card.astro";
+
+const servicios = [
+  {
+    titulo: "Diseño web",
+    descripcion: "Creamos sitios rápidos, claros y modernos para tu negocio.",
+    imagen: "/placeholder.svg",
+  },
+  {
+    titulo: "SEO y contenido",
+    descripcion: "Mejoramos tu visibilidad y ayudamos a comunicar mejor tu marca.",
+    imagen: "/placeholder.svg",
+  },
+  {
+    titulo: "Mantenimiento",
+    descripcion: "Acompañamos tu sitio con soporte continuo y mejoras constantes.",
+    imagen: "/placeholder.svg",
+  },
+];
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		
-	</body>
-</html>
+<BaseLayout title="Inicio">
+  <section>
+    <h1>Bienvenido a mi proyecto</h1>
+    <p>Esta es la página principal de nuestro sitio web.</p>
+  </section>
+
+  <section>
+    <h2>Nuestros servicios</h2>
+
+    {servicios.map((servicio) => (
+      <Card
+        nombre={servicio.titulo}
+        descripcion={servicio.descripcion}
+        imagen={servicio.imagen}
+      />
+    ))}
+  </section>
+</BaseLayout>
