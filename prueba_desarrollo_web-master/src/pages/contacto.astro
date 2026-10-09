@@ -1,0 +1,62 @@
+
+---
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import Car from "../components/Card.astro";
+
+const talleres = [
+  {
+    nombre: "Fotografía",
+    imagen: "/images/fotografia.jpg",
+    descripcion:
+      "Introducción a la composición y técnicas de fotografía digital."
+  },
+  {
+    nombre: "Cerámica",
+    imagen: "/images/ceramica.jpg",
+    descripcion:
+      "Creación de objetos utilizando técnicas básicas de modelado."
+  },
+  {
+    nombre: "Escritura creativa",
+    imagen: "/images/escritura.jpg",
+    descripcion:
+      "Exploración de relatos breves y ejercicios de escritura."
+  },
+  {
+    nombre: "Ilustración",
+    imagen: "/images/ilustracion.jpg",
+    descripcion:
+      "Desarrollo de habilidades de dibujo e ilustración digital."
+  }
+];
+---
+
+<Navbar />
+
+<main>
+  <h1>Nuestros talleres</h1>
+
+  <p>
+    En Espacio Cultural promovemos la creatividad y la expresión artística
+    mediante talleres donde puedes aprender nuevas técnicas, desarrollar
+    tus habilidades y compartir tus ideas.
+  </p>
+
+  <section>
+    <h2>Descubre nuestros talleres</h2>
+
+    <div>
+      {talleres.map((taller) => (
+        <Car
+          nombre={taller.nombre}
+          imagen={taller.imagen}
+          descripcion={taller.descripcion}
+        />
+      ))}
+    </div>
+  </section>
+</main>
+
+<Footer />
+
