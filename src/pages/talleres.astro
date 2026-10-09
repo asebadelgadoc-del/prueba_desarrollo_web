@@ -4,31 +4,33 @@ import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
 import Car from "../components/Card.astro";
 import "../styles/global.css";
+import BaseLayout from "../layouts/baselayout.astro";
+import foto from "../assets/images.jpg";
 
 const talleres = [
   {
-    nombre: "Fotografía",
+    nombre: "Fotografia",
     imagen: "/assets/images.jpg",
     descripcion:
-      "Introducción a la composición y técnicas de fotografía digital."
+      "Introduccion a la composicion y técnicas de fotografia digital."
   },
   {
-    nombre: "Cerámica",
+    nombre: "Ceramica",
     imagen: "/images/images2.jpg",
     descripcion:
-      "Creación de objetos utilizando técnicas básicas de modelado."
+      "Creacion de objetos utilizando técnicas basicas de modelado."
   },
   {
     nombre: "Escritura creativa",
     imagen: "/images/images3.jpg",
     descripcion:
-      "Exploración de relatos breves y ejercicios de escritura."
+      "Exploracion de relatos breves y ejercicios de escritura."
   },
   {
-    nombre: "Ilustración",
+    nombre: "Ilustracion",
     imagen: "/images/images4.jpg",
     descripcion:
-      "Desarrollo de habilidades de dibujo e ilustración digital."
+      "Desarrollo de habilidades de dibujo e ilustracion digital."
   }
 ];
 ---
