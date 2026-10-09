@@ -1,0 +1,25 @@
+hmno estoy haciendo una prueba y tengo que hacer un proyecto con astro que ya esta subido a github, necesito un layout y todo lo que necesite para lograr el proyecto
+
+necesito un components que tenga una tarjeta cuadrada que se pueda reutilizar y que se le pueda colocar un nombre, una imagen y descripcion que sea sencilla porfa
+
+oye estoy haciendo una pagina sobre nosotros el cual tengo un layout llamado baselayout.astro y querio que me agas una pagina de sobre nosotros la pigan es sobre esto Una organización cultural quiero que la pagina nosotros tenga informacion de cula es nuestro proposito y por que lo haces y para que
+ahora quiero que me agás lo mismo pero de otra pagina que se llama talleres  los cuales son Taller Descripción
+Fotografía Introducción a la composición y técnicas de fotografía digital.
+
+Cerámica Creación de objetos utilizando técnicas básicas de modelado.
+
+Escritura creativa Exploración de relatos breves y ejercicios de escritura.
+
+Ilustración Desarrollo de habilidades de dibujo e ilustración digital.
+
+ahora quiero que me agás lo mismo pero de otra pagina que se llama talleres  los cuales son Taller Descripción
+Fotografía Introducción a la composición y técnicas de fotografía digital.
+
+Cerámica Creación de objetos utilizando técnicas básicas de modelado.
+
+Escritura creativa Exploración de relatos breves y ejercicios de escritura.
+
+Ilustración Desarrollo de habilidades de dibujo e ilustración digital.
+
+
+oye necesito hacer components  para una pagina en astro quiero que me agás una  navbar que funcione para moverme en pagina y quiero que tenga home  talleres y nosotros ademas quiero que sea sencilla y reutilizable . tambien quiero que me agás otro component que sea un footer generico que pueda reutilizar
